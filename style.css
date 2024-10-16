@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+
+}
+
+body {
+  padding: 70px;
+}
+
+#page-login {
+  background-color: white;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  background-color: rgb(201, 207, 207);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  border-radius: 3px;
+}
+
+.content .title {
+  max-width: 250px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.description {
+  color: rgb(60, 63, 63);
+  padding-top: 18px;
+}
+
+.vote {
+  background-color: rgb(41, 39, 39);
+  color: rgb(201, 196, 196);
+  padding: 25px 18px 18px;
+  border-radius: 10px;
+  margin-top: auto;
+}
+
+.avt-gr {
+  display: flex;
+  margin-top: 20px;
+}
+
+.avt {
+  width: 30px;
+  height: 30px;
+  background-color: azure;
+  border-radius: 999999px;
+}
+
+.data {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.position {
+  color: rgb(163, 160, 160);
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.paginate {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.paginate div {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(90, 89, 88);
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.paginate div:nth-child(1) {
+  background-color: black;
+}
+
+.form-login {
+  width: 50%;
+  padding: 20px;
+
+}
+
+.form-login .title {
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.form-login .create {
+  margin-top: 15px;
+  color: rgb(54, 53, 53);
+}
+
+.form-login form {
+  padding: 40px 0;
+}
+
+form .form-control {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  font-size: 13px;
+  color: rgb(54, 53, 53);
+  margin-bottom: 5px;
+}
+
+.form-control label span {
+  float: right;
+  color: green;
+}
+
+.form-control input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(54, 53, 53);
+}
+
+form button {
+  background-color: blue;
+  width: 100%;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 25px;
+}
