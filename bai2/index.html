@@ -5,37 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="./style.css">
+
+  <script src="./script.js"></script>
 </head>
 
 <body>
-  <div id="app">
-    <div class="a">
-      <div class="a1">
-        <div class="a1-1"></div>
-        <div class="a1-1"></div>
-        <div class="a1-1"></div>
-        <div class="a1-1"></div>
+  <form action="" class="form">
+    <div class="top-bar">
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search..." value="Rand">
+        <button>Clear</button>
       </div>
-      <div class="a2">
-        <div class="a2-1"></div>
-        <div class="a2-1"></div>
-      </div>
-      <div class="a3">
-        <div class="a3-1">
-          <div class="a3-11"></div>
-          <div class="a3-12"></div>
-          <div class="a3-13"></div>
-        </div>
-        <div class="a3-1"></div>
-        <div class="a3-1"></div>
-        <div class="a3-1"></div>
-      </div>
-    </div>
-    <div class="b">
 
+      <div class="tab-group">
+        <div class="tab">
+          <div class="tab-item active">
+            <spn>All</spn>
+            <span class="badge">5</span>
+          </div>
+
+          <div class="tab-item">
+            <i class="fab fa-github"></i>
+            <spn>Github</spn>
+            <span class="badge">6</span>
+          </div>
+        </div>
+        <i class="fas fa-cog"></i>
+      </div>
     </div>
-  </div>
+
+    <div class="list">
+      <div class="list-item">
+        <div class="avatar"></div>
+        <div class="info">
+          <p class="name">Viet Hung</p>
+          <p class="status">Active now</p>
+        </div>
+      </div>
+
+      <div class="list-item">
+        <div class="avatar"></div>
+        <div class="info">
+          <p class="name">Viet Hung</p>
+          <p class="status">Active now</p>
+        </div>
+      </div>
+
+      <div class="list-item">
+        <div class="avatar"></div>
+        <div class="info">
+          <p class="name">Viet Hung</p>
+          <p class="status">Active now</p>
+        </div>
+      </div>
+    </div>
+  </form>
 </body>
 
 </html>

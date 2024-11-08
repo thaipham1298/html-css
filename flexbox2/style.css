@@ -1,0 +1,140 @@
+.app {
+  background-color: white;
+}
+
+.header {
+  margin-bottom: 5px;
+  height: 100px;
+  display: flex;
+  gap: 2px;
+  border: 1px solid black;
+}
+
+.a1 {
+  width: 200px;
+  border-right: 1px solid black;
+}
+
+.a2 {}
+
+.menu {
+  display: flex;
+  height: 40px;
+  border: 1px solid black;
+  padding: 2px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-bar {
+  display: flex;
+}
+
+
+.home {
+  width: 70px;
+  border-right: 1px solid black;
+}
+
+.student {
+  width: 70px;
+  border-right: 1px solid black;
+}
+
+.courses {
+  width: 70px;
+  border-right: 1px solid black;
+}
+
+.about {
+  width: 70px;
+  border-right: 1px solid black;
+}
+
+.contact {
+  width: 90px;
+}
+
+.search {
+  display: flex;
+  padding: 5px;
+  border-radius: 15px;
+  margin-right: 5px;
+  border: 1px solid black;
+}
+
+.search-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.search-input {
+  border: none;
+}
+
+.main {
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.left {
+  width: 150px;
+}
+
+.left1 {
+  height: 200px;
+}
+
+.left2 {
+  height: 300px;
+}
+
+.main-content {
+  flex: 1;
+  height: 550px;
+
+}
+
+.main1 {
+  display: flex;
+  height: 180px;
+  gap: 10px;
+}
+
+.main1-1 {
+  width: 50%;
+
+}
+
+.main1-2 {
+  width: 50%;
+}
+
+.main2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px -10px -20px;
+}
+
+.main2-1 {
+  width: calc(100%/3);
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.main2-1 div {
+  height: 100px;
+  background-color: red;
+}
+
+.right {
+  width: 150px;
+  height: 600px;
+  padding: 10px;
+}
+
+.right1 {
+  height: 180px;
+}

@@ -1,158 +1,137 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+* {
+  box-sizing: border-box;
+}
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+p {
   margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 body {
   background-color: #e0e0e0;
-  padding: 50px 100px;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-family: sans-serif;
 }
 
 .form {
-  background-color: #ffffff;
   width: 100%;
   max-width: 500px;
-  height: 700px;
-  border-radius: 30px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
-.search-bar {
+.top-bar {
+  border-bottom: 3px solid #ccc;
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search .fas {
+  color: #a8a8a8;
+  font-size: 20px;
+}
+
+.search input {
+  flex-grow: 1;
+  min-width: 0;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  outline: none;
+}
+
+.search button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.tab-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.tab {
   display: flex;
 }
 
-.search-icon {
-  background-color: blue;
-  width: 30px;
-  height: 30px;
+.tab-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  padding: 10px;
+  font-weight: 700;
+  margin-bottom: -3px;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+
+.tab-item.active {
+  border-color: black;
+  color: black;
+}
+
+.tab-item .badge {
+  padding: 3px 5px;
+  border-radius: 5px;
+  background-color: #dddddd;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tab-group>.fas {
+  color: #6d6d6d;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.list>*+* {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #ccc;
+}
+
+.list-item {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.list-item .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+.list-item .name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.list-item .status {
+  font-size: 12px;
+  font-weight: bold;
+  color: #797979;
+  margin-top: 5px;
 }
