@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+/* Navbar Start */
+.navbar {
+  background-color: #e6f3f8;
+  padding: 0px 10% 0px;
+  transition: all .50s ease;
+}
+
+.navbar-brand {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+}
+
+.nav-item .nav-link {
+  font-size: 18px;
+  font-weight: 550;
+  color: black;
+}
+
+/* Navbar End */
+
+
+/* Home section Start */
+section {
+  transition: all .50s ease;
+}
+
+.home {
+  padding: 90px 11% 90px;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+
+.home .img {
+  flex: 1 1 300px;
+}
+
+.home .img img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.home-content {
+  flex: 1 1 400px;
+}
+
+.home .home-content button {
+  position: relative;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 7px;
+  border: 1px solid blue;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: blue;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+}
+
+.home .home-content button:hover {
+  color: #fff;
+  background-color: blue;
+  box-shadow: 0 0 30px 3px blue;
+  transition: all 0.2s ease-out;
+}
+
+.home button:hover::before {
+  animation: sh02 0.2s 0s linear;
+}
+
+.home button::before {
+  content: ' ';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: blue;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+
+@keyframes animate {
+
+  40%,
+  60% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@media(max-width:990px) {
+  .home .text {
+    font-size: 30px;
+  }
+
+  .home p {
+    font-size: 20px;
+  }
+}
+
+@media(max-width:903px) {
+  .home {
+    height: auto;
+  }
+}
+
+/* Home section End */
+
+
+/* Offer Section Start */
+.offers {
+  padding: 60px 11% 60px;
+  background-color: #e6f3f8;
+  transition: all .50s ease;
+}
+
+.offers h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.offers .card {
+  padding: 20px;
+  border: none;
+  box-shadow: rgb(0, 0, 0.1) 0px 4px 12px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.offers .card i {
+  font-size: 25px;
+  color: blue;
+}
+
+.offers .card h5 {
+  margin-top: 10px;
+}
+
+/* Offer Section End */
